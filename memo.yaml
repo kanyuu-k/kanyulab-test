@@ -1,0 +1,7 @@
+
+# GAEへデプロイ
+gcloud app deploy --project kanyulab-reallysite
+
+# Cloud SQLへ接続
+./secrets/cloud_sql_proxy -instances=kanyulab-reallysite:us-central1:kanyulab-test-instance=tcp:3306
+
